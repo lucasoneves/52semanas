@@ -1,16 +1,9 @@
-import MainFooter from "./components/MainFooter";
-import MainHeader from "./components/MainHeader";
-import MainContainer from "./components/MainContainer";
-import "./assets/app.css";
-import ChallengeCardList from "./components/ChallengeCardList";
-function App() {
+
+import { ReactNode } from "react";
+function App({ children}: {children: ReactNode}) {
   return (
     <>
-      <MainHeader />
-      <MainContainer>
-        <ChallengeCardList />
-      </MainContainer>
-      <MainFooter />
+      <h2>Essa é a home page</h2>
     </>
   );
 }
