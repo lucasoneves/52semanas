@@ -1,0 +1,14 @@
+$main-radius: 40px;
+
+.progress-bar {
+  background-color: var(--base-gray);
+  height: 10px;
+  border-radius: $main-radius;
+}
+
+.inner-bar {
+  background-color: var(--space-cadet);
+  height: 100%;
+  display: block;
+  border-radius: $main-radius;
+}

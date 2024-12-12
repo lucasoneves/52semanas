@@ -1,0 +1,20 @@
+:root {
+
+  /*========== Collor pallete ==========*/
+
+  --base-gray: #a7a7a7;
+  --olivine--light: #b5ca8d;
+  --olivine: #8BB174;
+
+  --mirtle-green: #426B69;
+  --space-cadet: #222E50;
+  --dark-slate-gray: #2A4849;
+
+}
+
+body {
+  color: #E2E8CE;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--dark-slate-gray), var(--space-cadet));
+  font-size: 14px;
+}
