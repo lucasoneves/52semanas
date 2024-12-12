@@ -1,6 +1,4 @@
-
-import { ReactNode } from "react";
-function App({ children}: {children: ReactNode}) {
+function App() {
   return (
     <>
       <h2>Essa é a home page</h2>
