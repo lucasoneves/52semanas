@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Currency from "../Currency";
 import ProgressBar from "../ProgressBar";
 import styles from "./challenge-card.module.scss";
@@ -8,6 +9,7 @@ type ChallengeTypes = {
   targetValue: number;
   percentage: number;
   amount: number;
+  slug: string;
 };
 
 export default function ChallengeCard({
@@ -15,12 +17,13 @@ export default function ChallengeCard({
   targetValue,
   amount,
   percentage,
+  slug
 }: ChallengeTypes) {
   return (
     <div className={styles["challenge-card"]}>
       <header>
         <h2 className={styles["challenge-title"]}>{title}</h2>
-        <button>Editar</button>
+        <Link href={`/challenges/${slug}`}>Editar</Link>
       </header>
       <span className={styles["challenge-amount"]}><Currency value={amount} /></span>
       <ProgressBar percentage={percentage} />
