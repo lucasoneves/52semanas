@@ -17,7 +17,7 @@ export default function ChallengeCard({
   targetValue,
   amount,
   percentage,
-  slug
+  slug,
 }: ChallengeTypes) {
   return (
     <div className={styles["challenge-card"]}>
@@ -25,9 +25,13 @@ export default function ChallengeCard({
         <h2 className={styles["challenge-title"]}>{title}</h2>
         <Link href={`/challenges/${slug}`}>Editar</Link>
       </header>
-      <span className={styles["challenge-amount"]}><Currency value={amount} /></span>
+      <span className={styles["challenge-amount"]}>
+        <Currency value={amount} />
+      </span>
       <ProgressBar percentage={percentage} />
-      <span>Meta: <Currency value={targetValue} /></span>
+      <span>
+        Meta: <Currency value={targetValue} />
+      </span>
     </div>
   );
 }

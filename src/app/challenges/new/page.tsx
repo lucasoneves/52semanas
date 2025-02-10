@@ -18,7 +18,7 @@ export default function NewChallenge() {
 
         <label className='flex flex-col gap-2' htmlFor="description">
           <span className='block'>Descrição</span>
-          <textarea className='p-2 rounded-sm text-black' aria-label='description' placeholder='Escreva uma descrição para sua meta' id='description' />
+          <textarea className='p-4 rounded-lg text-black' aria-label='description' placeholder='Escreva uma descrição para sua meta' id='description' />
         </label>
 
         <label className='flex flex-col gap-2' htmlFor="initialValue">
@@ -26,7 +26,7 @@ export default function NewChallenge() {
           <Input placeholder='Escolha um valor inicial' type='number' />
         </label>
 
-        <button className='p-2 bg-[var(--success)] flex items-center justify-center'>Salvar</button>
+        <button className='p-4 rounded-lg bg-[var(--success)] flex items-center justify-center'>Salvar</button>
       </form>
     </div>
   )
